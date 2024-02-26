@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', credentialsId: 'MKRadius', url: 'https://github.com/MKRadius/FahrToCel.git'
+                git branch: 'main', credentialsId: 'MKRadius', url: 'https://github.com/MKRadius/FahrToCel.git'
             }
         }
         
