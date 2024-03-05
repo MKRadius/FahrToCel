@@ -15,8 +15,13 @@ public class FahrtToCelTest {
 
     @Test
     public void testKelvintoCel() {
-        assertEquals(0, FahrtToCel.kelvintoCel(273.15f), DELTA);
-        assertEquals(100, FahrtToCel.kelvintoCel(373.15f), DELTA);
-        assertEquals(37, FahrtToCel.kelvintoCel(310.15f), DELTA);
+        assertEquals(0, FahrtToCel.kelvinToCel(273.15f), DELTA);
+        assertEquals(100, FahrtToCel.kelvinToCel(373.15f), DELTA);
+        assertEquals(37, FahrtToCel.kelvinToCel(310.15f), DELTA);
+    }
+
+    @Test
+    public void testKelvintoFahr() {
+        assertEquals(59.0, FahrtToCel.kelvinToFahr(300.1f));
     }
 }
